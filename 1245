@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>某地区老年人慢性病发病情况</title>
+<style>
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.dynamic-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://pic.imgdb.cn/item/660437c39f345e8d0321b63b.jpg'); 
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+</style>
+</head>
+<body>
+  <div class="dynamic-background"></div>
+<div style="
+text-align:center;
+ padding:70px">
+      <h1 style="font-size:30px">某某地区老年人慢性疾病发病情况</h1> 
+      <div style="position: absolute;
+    display: flex;
+     top: 140px;
+     right: 0;">
+      <img src="https://pic.imgdb.cn/item/660435049f345e8d030f5a22.jpg" alt="扇形数据图" width="100px" height="100px" >
+    </div>
+    <div class="tabs";style="text-align: center;
+     ">
+      <div class="tab">
+        <input type="checkbox" id="chck1" checked>
+        <label class="tab-lable" for="chck1">
+          数据总览
+        </label>
+        <div class="tab-content">
+          本次调查共涉及xx个村,共计xx人口。
+          <p>
+          段落1
+          </p>
+          <p>
+          段落2
+          </p>
+        </div>
+      </div>
+      <div class="tab">
+        <input type="checkbox" id="chck2">
+        <label class="tab-lable" for="chck2">
+         详细数据 
+        </label>
+        <div class="tab-content">
+          <table>
+            <thead>
+              <tr>
+                <th> </th>
+                <th>年龄</th>
+                <th>性别</th>
+                <th>疾病1</th>
+                <th>疾病2</th>
+                <th>疾病3</th>
+                <th>疾病4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>名字1</td>
+                <td>xx</td>
+                <td>x</td>
+                <td>是/否</td>
+                <td>是/否</td>
+                <td>是/否</td>
+                <td>是/否</td>
+              </tr>
+              <tr>
+                <td>名字2</td>
+                <td>xx</td>
+                <td>x</td>
+                <td>是/否</td>
+                <td>是/否</td>
+                <td>是/否</td>
+                <td>是/否</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>    
+    </div>
+
+    <style>
+      a {
+     font-size: 16px;
+     max-width: 200px;
+     text-decoration: none;}
+     
+      *{
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        width:100%;
+        height:100%;
+      }
+
+      body {
+       background: #ecf0f1;
+       display:flex;
+       align-items: center;
+       justify-content: center;
+      }
+
+      input{
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+      }
+
+      .tabs {
+       width:110%;
+       margin-top: 300px;
+       border-radius: 8px;
+       overflow: hidden;
+       box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+      }
+
+      .tab {
+       overflow: hidden;
+      }
+
+      .tab-lable {
+       color: white;
+       display: flex;
+       justify-content: space-between;
+       padding: 10px;
+       background: #65a7e8;
+       font-weight: bold;
+       cursor: pointer;
+      }
+
+      .tab-lable:hover {
+        background: #065fb1; 
+      }
+
+      .tab-lable::after {
+       content: "》";
+       width: 100px;
+       height: 50px;
+       text-align: center;
+       transition: all 0.2s ease;
+      } 
+
+      .tab-content {
+       max-height: 0;
+       padding: 0 30px;
+       color: #2c3e50;
+       background: white;
+       transition: all 0.2s ease;
+       font-size: 13px;
+       line-height: 24px;
+       
+      }
+
+      input:checked+.tab-lable {
+       background: #065fb1;
+      }
+
+      input:checked+.tab-lable::after {
+        transform: rotate(90deg);
+      }
+
+      input:checked~.tab-content {
+       max-height: 100vh;
+       padding: 10px;
+      }
+     
+    </style> 
+</div>
+<a href="file:///C:/Users/28242/Desktop/%E5%9C%B0%E5%8C%BA%E5%88%86%E5%B8%83.html">查看详细数据</a>
+</body>
+</html>
